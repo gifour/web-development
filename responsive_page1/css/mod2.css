@@ -16,7 +16,7 @@ html {
 h1 {
   margin: 50px 50px 20px;
   text-align: center;
-  font-family: "Impact", "Charcoal", sans-serif;
+  font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 /*just the border for p element*/
@@ -26,7 +26,7 @@ p {
 
 /*plate description css properties*/
 .text-box  {
-  height: 170px;  
+  height: 200px;  
   padding:35px 10px 5px;
   margin: 15px;
   font-family: "Comic Sans MS", cursive, sans-serif;
@@ -41,8 +41,9 @@ p {
   width:150px;
   height:30px;
   margin: 0px;
-  padding:5px 0px;
+  
   font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size:125%;
   font-weight: bold;
   text-align: center;
 }
