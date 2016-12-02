@@ -1,0 +1,95 @@
+/********** Base styles **********/
+
+/*reset browser css properties */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*It will help to align boxes perfectly in the prowser's screen and with the browser edges*/
+html {
+  margin: 15px;
+}
+
+/*set header margin and alignment*/
+h1 {
+  margin: 50px 50px 20px;
+  text-align: center;
+  font-family: "Impact", "Charcoal", sans-serif;
+}
+
+/*just the border for p element*/
+p {
+  border: 1px solid black;
+}
+
+/*plate description css properties*/
+.text-box  {
+  height: 170px;  
+  padding:35px 10px 5px;
+  margin: 15px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #ffffef;
+}
+
+/*dish-lebel css properties*/
+.main-dishes {
+  position: absolute; /*in order to be excluded from the document flow*/
+  right: 15px;        /* overlaps .col-xx-x > .text-box on the ... */
+  top: 15px;          /* ...top - right corner */ 
+  width:150px;
+  height:30px;
+  margin: 0px;
+  padding:5px 0px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.chicken{
+  background: #ffdd00;
+}
+.beef{
+  background: #40e900;
+}
+.sushi{
+  background: #00daff;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** (Desktop view) **********/
+@media (min-width: 992px) {
+  .col-md-4 {
+    float: left;        /*gives the requested layout when md*/
+    position: relative; /*controls "absolute position" for .main-dishes*/
+    width: 33.33%;
+  }
+}
+
+/********** (Tablet view) **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-sm-6, .col-sm-12 {
+    float: left;        /*gives the requested layout when sm*/
+    position: relative; /*controls "absolute position" for .main-dishes*/
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+}
+
+/********** (Mobile view) **********/
+@media (max-width: 767px) {
+  .col-xs-12 {
+    float: left;        /*gives the requested layout when xs*/
+    position: relative; /*controls "absolute position" for .main-dishes*/
+    width: 100%;
+  }
+}
